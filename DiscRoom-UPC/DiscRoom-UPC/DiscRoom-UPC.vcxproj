@@ -150,6 +150,11 @@
     <ClInclude Include="Mapa.h" />
     <ClInclude Include="Personaje.h" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formulario.resx">
+      <DependentUpon>Formulario.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
