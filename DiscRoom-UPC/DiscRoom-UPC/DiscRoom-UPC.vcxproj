@@ -138,11 +138,17 @@
     <ClCompile Include="Formulario.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArrDiscos.h" />
+    <ClInclude Include="Discos.h" />
     <ClInclude Include="Formulario.h">
       <FileType>CppForm</FileType>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
     </ClInclude>
+    <ClInclude Include="Juego.h" />
+    <ClInclude Include="Jugador.h" />
+    <ClInclude Include="Mapa.h" />
+    <ClInclude Include="Personaje.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
