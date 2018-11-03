@@ -5,6 +5,11 @@ class CDiscos
 {
 public:
 	CDiscos() {}
+	
+	
+	////
+	
+	
 	~CDiscos() {}
 
 private:
