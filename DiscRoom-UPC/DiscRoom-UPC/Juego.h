@@ -9,7 +9,7 @@ class CJuego
 public:
 	CJuego()
 	{
-		objJugador = new CJugador(70, 50);
+		objJugador = new CJugador(60, 10);
 	}
 	void dibujarJuego(Graphics ^g, Bitmap^ bmpNivel1, Bitmap^bmpBatman)
 	{

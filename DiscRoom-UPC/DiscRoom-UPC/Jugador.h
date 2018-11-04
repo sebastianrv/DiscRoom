@@ -31,8 +31,29 @@ public:
 		Rectangle usar = Rectangle(indiceX*ancho, indiceY*alto, ancho, alto);
 		Rectangle hacerGrande = Rectangle(x, y, ancho * 2, alto * 2);
 		g->DrawImage(bmpBatman, hacerGrande, usar, GraphicsUnit::Pixel);
-		x = x + dx;
-		y = y + dy;
+		
+		if (dx < 0 )
+		{
+			if((x + dx) >= 60)
+				x +=  dx;
+		}
+		else
+		{
+			if ((x + dx) <= 410)
+				x +=  dx;
+		}
+
+		if (dy < 0)
+		{
+			if ((y + dy) >= 10)
+				y +=  dy;
+		}
+		else
+		{
+			if ((y + dy) <= 370)
+				y += dy;
+		}
+		
 	}
 	void mover(Graphics^g, Bitmap ^bmpBatman)
 	{
